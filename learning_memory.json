@@ -59,6 +59,186 @@
       "outcome": "unknown",
       "success": true,
       "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-14T18:08:26.454023",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Research articles | Nature Biotechnology",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_180759"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-14T18:08:34.012558",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Clinical trials gain intelligence | Nature Biotechnology",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260314_180828"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-14T19:09:17.617877",
+      "experiment": {
+        "topic_category": "emerging biomedical discoveries",
+        "paper_title": "DPP8 is a novel therapeutic target for multiple myeloma | Scientific Reports",
+        "paper_score": 0.5,
+        "curiosity_score": 34,
+        "hook_used": "Scientists have made a revolut...",
+        "success": false,
+        "timestamp": "20260314_190856"
+      },
+      "outcome": "unknown",
+      "success": false,
+      "topic_category": "emerging biomedical discoveries"
+    },
+    {
+      "timestamp": "2026-03-14T19:09:35.445484",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Therapeutic Target Identification and Drug Discovery Driven ...",
+        "paper_score": 0.4325000000000001,
+        "curiosity_score": 37,
+        "hook_used": "Scientists have made a groundb...",
+        "success": true,
+        "timestamp": "20260314_190919"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-14T20:10:18.033958",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Unlocking liver physiology: comprehensive pathway maps for ... - PMC",
+        "paper_score": 0.4275000000000001,
+        "curiosity_score": 35,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_200956"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-14T20:10:41.606668",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Health sciences - Latest research and news",
+        "paper_score": 0.5,
+        "curiosity_score": 36,
+        "hook_used": "Scientists reveal why this bio...",
+        "success": true,
+        "timestamp": "20260314_201020"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-14T21:11:04.949464",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Impacts of Microgravity on Circadian Rhythms and Regulatory ...",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Researchers have uncovered a i...",
+        "success": true,
+        "timestamp": "20260314_211100"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-14T21:11:10.931403",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Metabolomics\u2010driven approaches for identifying therapeutic ...",
+        "paper_score": 0.43499999999999994,
+        "curiosity_score": 36,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_211106"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-14T22:11:31.441604",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Biomarkers of Nutrition and Health: New Tools for New Approaches",
+        "paper_score": 0.4,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260314_221126"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-14T22:11:38.683982",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Emerging Biomarkers in Metabolomics: Advancements in Precision ...",
+        "paper_score": 0.515,
+        "curiosity_score": 37,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_221133"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-14T23:12:04.291091",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "A novel approach for correction of crosstalk effects in pathway analysis and its application in osteoporosis research | Scientific Reports",
+        "paper_score": 0.5,
+        "curiosity_score": 36,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_231200"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-14T23:12:10.389878",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Peptidomic analysis reveals novel peptide PDLC promotes cell proliferation in hepatocellular carcinoma via Ras/Raf/MEK/ERK pathway | Scientific Reports",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260314_231206"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "metabolism"
     }
   ],
   "performance_history": [],
