@@ -90,13 +90,25 @@ class AutoResearchBio:
     def run_pipeline(self):
         """Run a single iteration of the complete pipeline"""
         print(f"\n[REFRESH] Starting pipeline iteration #{self.stats['total_iterations'] + 1}")
+        iteration_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        checkpoint_path = os.path.join("results", "checkpoints", f"iteration_{iteration_timestamp}.json")
+        self._write_checkpoint(checkpoint_path, {
+            "iteration": self.stats['total_iterations'] + 1,
+            "timestamp": iteration_timestamp,
+            "stage": "started"
+        })
         tavily_calls_start = getattr(self.paper_finder, "tavily_calls", 0)
         gemini_calls_start = getattr(self.post_generator, "gemini_calls", 0)
         
         try:
             # Step 1: Generate research keywords
             print("[SEARCH] Generating research keywords...")
-            keywords = self.keyword_generator.generate_keywords()
+            topic_performance = {topic: avg for topic, avg in self.topic_memory.get_top_performing_topics(5)}
+            if topic_performance:
+                keywords = self.keyword_generator.generate_topic_biased_keywords(topic_performance)
+                print("   Using topic-biased keywords based on performance memory")
+            else:
+                keywords = self.keyword_generator.generate_keywords()
             print(f"   Generated {len(keywords)} keywords: {keywords}")
             
             # Bias keywords based on topic memory
@@ -105,7 +117,7 @@ class AutoResearchBio:
             
             # Step 2: Find papers using keywords
             print("[BOOK] Finding relevant papers...")
-            papers = self.paper_finder.search_papers(biased_keywords[:3])  # Use top 3 keywords
+            papers = self.paper_finder.search_papers(biased_keywords[:5])  # Use top 5 keywords
             print(f"   Found {len(papers)} papers")
             
             if not papers:
@@ -125,6 +137,7 @@ class AutoResearchBio:
             # Process each high-quality paper
             for i, paper in enumerate(filtered_papers[:2]):  # Process top 2 papers
                 print(f"\n[NOTE] Processing paper {i+1}/{len(filtered_papers[:2])}: {paper['title'][:50]}...")
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 
                 # Step 4: Extract insights from paper
                 print("   [LAB] Extracting key insights...")
@@ -153,6 +166,22 @@ class AutoResearchBio:
                 curiosity_scores = self.post_generator.score_curiosity(post_data)
                 total_curiosity = self.post_generator.get_total_curiosity_score(curiosity_scores)
                 print(f"   Curiosity score: {total_curiosity}/50")
+
+                # Early TSV append after scoring, before optimization
+                self._append_results_tsv({
+                    'timestamp': timestamp,
+                    'paper_title': paper.get('title', ''),
+                    'authors': paper.get('authors', ''),
+                    'journal': paper.get('journal', ''),
+                    'year': paper.get('year', ''),
+                    'url': paper.get('url', ''),
+                    'paper_score': paper.get('score', ''),
+                    'model': post_data.get('generated_by_model', ''),
+                    'curiosity_score': total_curiosity,
+                    'curiosity_scores': curiosity_scores,
+                    'hashtags': [],
+                    'status': 'scored'
+                })
                 
                 # Regenerate if score is too low
                 regeneration_count = 0
@@ -170,7 +199,6 @@ class AutoResearchBio:
                 
                 # Step 10: Save results
                 print("   [DISK] Saving results...")
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 filename = f"results/post_{timestamp}_{i+1}.txt"
                 
                 # Create results directory if it doesn't exist
@@ -202,7 +230,7 @@ class AutoResearchBio:
                     'curiosity_score': total_curiosity,
                     'curiosity_scores': curiosity_scores,
                     'hashtags': optimized_post.get('hashtags', []),
-                    'status': 'success' if total_curiosity >= config.MIN_CURIOSITY_SCORE else 'failed'
+                    'status': 'completed' if total_curiosity >= config.MIN_CURIOSITY_SCORE else 'completed_low_score'
                 })
                 
                 # Update stats
@@ -210,8 +238,9 @@ class AutoResearchBio:
                 self.stats['posts_generated'] += 1
                 
                 # Record experiment in learning loop
+                topic_category = self._categorize_topic(paper['title'])
                 experiment_data = {
-                    'topic_category': self._categorize_topic(paper['title']),
+                    'topic_category': topic_category,
                     'paper_title': paper['title'],
                     'paper_score': paper.get('score', 0),
                     'curiosity_score': total_curiosity,
@@ -220,6 +249,7 @@ class AutoResearchBio:
                     'timestamp': timestamp
                 }
                 self.learning_loop.record_experiment(experiment_data)
+                self.topic_memory.update_topic_performance(topic_category, total_curiosity / 50.0)
                 
                 print(f"   [CHECK] Post saved to {filename}")
                 
@@ -233,6 +263,13 @@ class AutoResearchBio:
         
         finally:
             self.stats['total_iterations'] += 1
+            self._write_checkpoint(checkpoint_path, {
+                "iteration": self.stats['total_iterations'],
+                "timestamp": iteration_timestamp,
+                "stage": "completed",
+                "papers_processed": self.stats['papers_processed'],
+                "posts_generated": self.stats['posts_generated']
+            })
             tavily_calls_end = getattr(self.paper_finder, "tavily_calls", 0)
             gemini_calls_end = getattr(self.post_generator, "gemini_calls", 0)
             tavily_calls_delta = max(0, tavily_calls_end - tavily_calls_start)
@@ -240,6 +277,7 @@ class AutoResearchBio:
             print(f"[CHART] Stats - Iterations: {self.stats['total_iterations']}, "
                   f"Papers: {self.stats['papers_processed']}, Posts: {self.stats['posts_generated']}")
             print(f"[TOOL] API calls this run - Tavily: {tavily_calls_delta}, Gemini: {gemini_calls_delta}")
+            self._print_learning_snapshot(10)
     
     def _categorize_topic(self, title: str) -> str:
         """Categorize the paper topic based on keywords in the title"""
@@ -251,8 +289,8 @@ class AutoResearchBio:
             'metabolic disease': ['diabetes', 'obesity', 'disease', 'syndrome', 'disorder', 'condition'],
             'human physiology': ['physiology', 'human', 'organ', 'tissue', 'cellular', 'function'],
             'biotechnology': ['biotech', 'therapy', 'treatment', 'drug', 'pharma', 'biological'],
-            'health science': ['health', 'medical', 'clinic', 'patient', 'treatment', 'care'],
-            'emerging discoveries': ['novel', 'discovery', 'new', 'recent', 'innovative', 'breakthrough']
+            'health science insights': ['health', 'medical', 'clinic', 'patient', 'treatment', 'care'],
+            'emerging biomedical discoveries': ['novel', 'discovery', 'new', 'recent', 'innovative', 'breakthrough']
         }
         
         for category, keywords in categories.items():
@@ -260,6 +298,24 @@ class AutoResearchBio:
                 return category
         
         return 'general'
+
+    def _print_learning_snapshot(self, last_n: int = 10):
+        """Print a brief rolling performance summary."""
+        experiments = self.learning_loop.memory.get('experiments', [])
+        if not experiments:
+            print("[LEARN] No experiments yet to summarize")
+            return
+
+        recent = experiments[-last_n:]
+        if not recent:
+            print("[LEARN] No recent experiments to summarize")
+            return
+
+        scores = [exp.get('curiosity_score', 0) for exp in recent]
+        successes = [exp.get('success', False) for exp in recent]
+        avg_score = sum(scores) / len(scores) if scores else 0
+        success_rate = sum(1 for s in successes if s) / len(successes) if successes else 0
+        print(f"[LEARN] Last {len(recent)} posts - Avg curiosity: {avg_score:.1f}/50, Success rate: {success_rate:.0%}")
 
     def _append_results_tsv(self, row: Dict[str, object], tsv_path: str = "bio_results.tsv"):
         """Append a row to the bio_results.tsv file, adding a header if needed."""
@@ -293,6 +349,12 @@ class AutoResearchBio:
                 f.write("\t".join(header) + "\n")
             values = [_stringify(row.get(key, "")) for key in header]
             f.write("\t".join(values) + "\n")
+
+    def _write_checkpoint(self, path: str, payload: Dict[str, object]):
+        """Write a lightweight checkpoint file for iteration progress."""
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2)
     
     def print_stats(self):
         """Print current statistics"""

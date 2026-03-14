@@ -58,6 +58,10 @@ class PaperScorer:
             recency * 0.10
         )
 
+        # Ensure Tier 1 journals get a minimum floor score to avoid over-filtering.
+        if journal_impact >= 1.0 and total_score < 0.5:
+            total_score = 0.5
+
         return min(1.0, max(0.0, total_score))  # Clamp between 0 and 1
 
     def _calculate_novelty_score(self, paper: Dict) -> float:

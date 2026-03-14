@@ -1,0 +1,66 @@
+{
+  "experiments": [
+    {
+      "timestamp": "2026-03-14T16:55:00.370114",
+      "experiment": {
+        "topic_category": "emerging discoveries",
+        "paper_title": "New approaches for challenging therapeutic targets - PMC",
+        "paper_score": 0.4125,
+        "curiosity_score": 37,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_165448"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "emerging discoveries"
+    },
+    {
+      "timestamp": "2026-03-14T16:55:07.669710",
+      "experiment": {
+        "topic_category": "health science",
+        "paper_title": "Improving target assessment in biomedical research: the GOT-IT ...",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Scientists have made a breakth...",
+        "success": true,
+        "timestamp": "20260314_165502"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "health science"
+    },
+    {
+      "timestamp": "2026-03-14T17:07:31.353117",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "New discoveries in therapeutic targets and drug development ... - PMC",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_170727"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-14T17:07:38.621749",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Insights in genetics: from molecular mechanisms to patient ... - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260314_170733"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "health science insights"
+    }
+  ],
+  "performance_history": [],
+  "learnings": []
+}

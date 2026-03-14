@@ -18,7 +18,7 @@ class BioConfig:
     gemini_model: str = os.getenv('GEMINI_MODEL', 'gemini-1.5-pro')
     
     # Paper scoring thresholds
-    MIN_PAPER_SCORE: float = 0.5  # Papers must score above this to proceed
+    MIN_PAPER_SCORE: float = 0.4  # Papers must score above this to proceed
     
     # Post generation thresholds
     MIN_CURIOSITY_SCORE: int = 35  # Posts must score at least this high
