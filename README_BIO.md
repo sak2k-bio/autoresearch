@@ -18,7 +18,7 @@ The AutoResearch Bio-Medical Pipeline is an autonomous system that implements a 
 
 - **Autonomous Operation**: Runs continuously without manual intervention
 - **Self-Improvement**: Learns from performance metrics to generate better content
-- **Quality Filtering**: Only processes papers scoring above 0.7/1.0 threshold
+- **Quality Filtering**: Only processes papers scoring above a minimum threshold
 - **API Key Management**: Handles multiple Gemini API keys with automatic fallback
 - **Topic Memory**: Tracks which topics perform best and biases selection accordingly
 - **Curiosity Scoring**: Ensures posts score 35+/50 on engagement metrics
@@ -88,7 +88,7 @@ The system will:
 - Extract insights and simplify complex mechanisms
 - Generate and optimize LinkedIn posts
 - Track performance and learn from results
-- Continue indefinitely with self-improvement
+- Continue indefinitely with self-improvement (default interval: 15 minutes)
 
 ### Running a Single Iteration
 
@@ -96,6 +96,20 @@ To run a single pipeline iteration for testing:
 
 ```bash
 python autoresearch_bio.py --run-once
+```
+
+### Recording Outcomes (Performance Feedback)
+
+Log real-world performance so the system can learn:
+
+```bash
+python autoresearch_bio.py --record-outcome 20260315_153055 --impressions 2500 --clicks 45 --likes 120 --comments 6 --shares 8 --saves 14 --notes "Strong niche engagement"
+```
+
+To bulk import from a TSV:
+
+```bash
+python autoresearch_bio.py --ingest-outcomes autoresearch/outcomes.tsv
 ```
 
 ### Viewing Learning Summary
@@ -112,11 +126,12 @@ python autoresearch_bio.py --print-learning
 
 The system is configured in `bio_research/config.py`:
 
-- `MIN_PAPER_SCORE`: Minimum score (0.0-1.0) for papers to be processed (default: 0.7)
+- `MIN_PAPER_SCORE`: Minimum score (0.0-1.0) for papers to be processed (default: 0.4)
 - `MIN_CURIOSITY_SCORE`: Minimum score (0-50) for posts before regeneration (default: 35)
 - `NUM_HOOKS_TO_GENERATE`: Number of hooks generated per paper (default: 10)
 - `TOPIC_CATEGORIES`: Research areas to focus on
 - `KEYWORD_PATTERNS`: Keyword patterns to use
+ - `MIN_OUTCOME_SCORE`: Minimum outcome score (0-1) to count as success (default: 0.5)
 
 ### Journal Tiers
 
@@ -151,6 +166,8 @@ The system maintains several tracking files:
 - `bio_results.tsv`: Complete experiment logs with timestamps, scores, and status
 - `results/post_*.txt`: Full post outputs with metadata and optimized text
 - `topic_memory.json`: Performance data for different research topics
+- `learning_memory.json`: Experiments, outcomes, and learning history
+- `outcomes.tsv`: Outcome log for real performance metrics
 - Console output: Real-time progress and learning reports
 
 ## Troubleshooting

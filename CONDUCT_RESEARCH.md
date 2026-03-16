@@ -16,6 +16,10 @@ This guide explains how to run the Bio pipeline, evaluate results, and iterate o
    ```
    python autoresearch_bio.py
    ```
+   Default interval is 15 minutes. To override:
+   ```
+   python autoresearch_bio.py --continuous --interval 5
+   ```
 
 What you should see:
 - Keyword generation
@@ -40,7 +44,9 @@ Memory:
 - `topic_memory.json`  
   - Rolling topic performance used to bias keywords.
 - `learning_memory.json`  
-  - Experiment history used for learning summaries and future analysis.
+  - Experiment history, outcomes, and learning summaries.
+- `outcomes.tsv`
+  - Outcome log for real performance metrics.
 
 Console:
 - API call counts per iteration: Tavily and Gemini
@@ -50,6 +56,7 @@ Console:
 
 Key signals to watch:
 - **Curiosity score (0-50)**: The main quality signal. Goal is 35+.
+- **Outcome score (0-1)**: Real performance signal derived from engagement metrics.
 - **Success rate**: % of posts >= `MIN_CURIOSITY_SCORE`.
 - **Avg curiosity (last N)**: Rolling average for recent performance.
 - **Filtered paper count**: If this is 0 frequently, reduce `MIN_PAPER_SCORE` or expand search.
@@ -99,6 +106,7 @@ Use this loop to improve output quality:
    - Reduce `max_results` to save API cost
 5. Record changes and compare before/after:
    - Use rolling curiosity averages and success rate to validate improvements
+   - Ingest outcome data weekly to validate real-world performance shifts
 
 ## 6. What to Look For in Outputs
 
@@ -153,10 +161,17 @@ Before a long run:
 - Confirm API keys
 - Run 1-2 test iterations
 - Verify `bio_results.tsv` and `results/post_*.txt` are updating
+- Verify `outcomes.tsv` is ready for performance logging
 
 After each iteration:
 - Check curiosity score and success rate
 - Confirm TSV entries and text output
 - Read 1-2 generated posts for quality
+
+After publishing:
+- Record outcomes with:
+  ```
+  python autoresearch_bio.py --record-outcome <TIMESTAMP> --impressions <N> --clicks <N> --likes <N> --comments <N> --shares <N> --saves <N>
+  ```
 
 If you want a custom workflow or additional metrics (like cost tracking), add them here and update this guide as the process evolves.

@@ -419,6 +419,708 @@
       "outcome": "unknown",
       "success": true,
       "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-15T16:31:21.106050",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Unraveling the Complexity of Metabolic Disorders Through Biomarkers",
+        "paper_score": 0.4325,
+        "curiosity_score": 35,
+        "hook_used": "Researchers have uncovered a s...",
+        "success": true,
+        "timestamp": "20260315_163116"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-15T16:31:27.198222",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of transcription through compartmentalized ...",
+        "paper_score": 0.5,
+        "curiosity_score": 40,
+        "hook_used": "Traditional views of metabolic...",
+        "success": true,
+        "timestamp": "20260315_163123"
+      },
+      "outcome": "unknown",
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T01:27:37.046365",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Wild-type RAS signaling is an essential therapeutic target ...",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A innovative new theory is cha...",
+        "success": true,
+        "timestamp": "20260316_012730"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T01:27:43.136034",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of the immune system in health and diseases",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_012739"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T01:43:09.680336",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic dysregulation in pulmonary fibrosis: insights into amino ...",
+        "paper_score": 0.5,
+        "curiosity_score": 40,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_014306"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T01:43:27.326646",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Data Science in Medical and Healthcare: Current Landscape - PMC",
+        "paper_score": 0.48,
+        "curiosity_score": 35,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_014311"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-16T01:58:49.434846",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic pathways articles within Scientific Reports - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_015845"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T01:58:55.134348",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Characterization of Myeloid Cellular Populations in Mesenteric and ...",
+        "paper_score": 0.5,
+        "curiosity_score": 36,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_015851"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T02:14:37.820686",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Structure, biochemical function, and signaling mechanism of plant ...",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_021414"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T02:15:08.348158",
+      "experiment": {
+        "topic_category": "emerging biomedical discoveries",
+        "paper_title": "New approaches for challenging therapeutic targets - PMC",
+        "paper_score": 0.4125,
+        "curiosity_score": 34,
+        "hook_used": "A new study reveals something ...",
+        "success": false,
+        "timestamp": "20260316_021439"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": false,
+      "topic_category": "emerging biomedical discoveries"
+    },
+    {
+      "timestamp": "2026-03-16T02:30:31.172640",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Microphysiological systems to advance human pathophysiology and ...",
+        "paper_score": 0.405,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_023026"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T02:30:36.497018",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Bridging the gap: From petri dish to patient - Advancements in ... - PMC",
+        "paper_score": 0.4075,
+        "curiosity_score": 37,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_023033"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-16T02:46:06.809900",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Engineered Human Contractile Myofiber Sheets as a Platform for Studies of Skeletal Muscle Physiology | Scientific Reports",
+        "paper_score": 0.5,
+        "curiosity_score": 37,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_024553"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T02:46:12.564382",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Neuronal physiology - Latest research and news | Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260316_024608"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T03:01:35.825694",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Longevity biotechnology: bridging AI, biomarkers, geroscience and ...",
+        "paper_score": 0.48250000000000004,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_030130"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-16T03:01:55.183246",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Biomarkers of COVID-19 and technologies to combat SARS-CoV-2",
+        "paper_score": 0.4275,
+        "curiosity_score": 30,
+        "hook_used": "A new study reveals something ...",
+        "success": false,
+        "timestamp": "20260316_030137"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": false,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T06:54:52.170805",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of the immune system in health and diseases",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_065447"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T06:54:59.056609",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Editorial: Upping the heat: capsaicin for human health - PMC",
+        "paper_score": 0.45000000000000007,
+        "curiosity_score": 39,
+        "hook_used": "Scientists have made a innovat...",
+        "success": true,
+        "timestamp": "20260316_065454"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T07:10:22.265390",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Drug resistance in cancer: molecular mechanisms and emerging ...",
+        "paper_score": 0.4725,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_071018"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-16T07:11:35.433195",
+      "experiment": {
+        "topic_category": "metabolic disease",
+        "paper_title": "Advances in Molecular Medicine: Unravelling Disease Complexity ...",
+        "paper_score": 0.48250000000000004,
+        "curiosity_score": 35,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260316_071024"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolic disease"
+    },
+    {
+      "timestamp": "2026-03-16T07:27:05.742927",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Metabolomics\u2010driven approaches for identifying therapeutic targets ...",
+        "paper_score": 0.43499999999999994,
+        "curiosity_score": 36,
+        "hook_used": "Scientists have made a revolut...",
+        "success": true,
+        "timestamp": "20260316_072650"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T07:27:11.446782",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Microphysiological systems to advance human pathophysiology and ...",
+        "paper_score": 0.43000000000000005,
+        "curiosity_score": 38,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260316_072707"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T07:42:46.592886",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Biotechnology articles within Nature Communications",
+        "paper_score": 0.5,
+        "curiosity_score": 36,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260316_074228"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-16T07:43:21.673224",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of the immune system in health and diseases",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A counterintuitive new theory ...",
+        "success": true,
+        "timestamp": "20260316_074248"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T07:58:56.168740",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Integrating molecular biomarkers and emerging technologies - PMC",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Scientists just discovered som...",
+        "success": true,
+        "timestamp": "20260316_075838"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T07:59:02.161039",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Biomarkers | Nature Biotechnology",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "What if everything we knew abo...",
+        "success": true,
+        "timestamp": "20260316_075858"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-16T08:14:20.870549",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "In Silico Pre-Clinical Validation Approach in the Face of Lung Cancer",
+        "paper_score": 0.5525,
+        "curiosity_score": 36,
+        "hook_used": "Everyone believes 43 however, ...",
+        "success": true,
+        "timestamp": "20260316_081416"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-16T08:14:31.759377",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Biomarkers: Promising and valuable tools towards diagnosis ... - PMC",
+        "paper_score": 0.4100000000000001,
+        "curiosity_score": 39,
+        "hook_used": "What if everything we knew abo...",
+        "success": true,
+        "timestamp": "20260316_081422"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T08:31:01.979896",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Energy metabolism in health and diseases - PMC",
+        "paper_score": 0.4075000000000001,
+        "curiosity_score": 34,
+        "hook_used": "New research explains the surp...",
+        "success": false,
+        "timestamp": "20260316_082950"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": false,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T08:31:10.558587",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Energy metabolism in health and diseases - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 37,
+        "hook_used": "Scientists have made a surpris...",
+        "success": true,
+        "timestamp": "20260316_083103"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T08:46:27.909947",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Iron deposition in substantia nigra: abnormal iron metabolism, neuroinflammatory mechanism and clinical relevance | Scientific Reports",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_084624"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T08:49:19.475631",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Clinical metabolomics: Useful insights, perspectives and challenges",
+        "paper_score": 0.405,
+        "curiosity_score": 34,
+        "hook_used": "A new study reveals something ...",
+        "success": false,
+        "timestamp": "20260316_084629"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": false,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-16T09:04:39.689532",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Unexpected Discoveries Should Be Reconsidered in Science ... - PMC",
+        "paper_score": 0.525,
+        "curiosity_score": 38,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_090434"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T09:04:58.908416",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Intracellular Ca2+ signalling: unexpected new roles for the usual ...",
+        "paper_score": 0.4025,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260316_090441"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-16T09:20:26.600103",
+      "experiment": {
+        "topic_category": "clinical biochemistry",
+        "paper_title": "Biochemistry - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 38,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_092017"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "clinical biochemistry"
+    },
+    {
+      "timestamp": "2026-03-16T09:20:32.671531",
+      "experiment": {
+        "topic_category": "clinical biochemistry",
+        "paper_title": "Biochemistry articles within Nature Medicine",
+        "paper_score": 0.5,
+        "curiosity_score": 37,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260316_092028"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "clinical biochemistry"
+    },
+    {
+      "timestamp": "2026-03-16T09:35:53.594561",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic Regulation of Inflammation and Its Resolution",
+        "paper_score": 0.44500000000000006,
+        "curiosity_score": 38,
+        "hook_used": "Scientists reveal why metaboli...",
+        "success": true,
+        "timestamp": "20260316_093549"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T09:37:10.331998",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of the immune system in health and ...",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "A counterintuitive new theory ...",
+        "success": true,
+        "timestamp": "20260316_093555"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T09:52:31.371628",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Molecular mechanisms underlying chemical liver injury - PMC - NIH",
+        "paper_score": 0.44499999999999995,
+        "curiosity_score": 37,
+        "hook_used": "Scientists have made a counter...",
+        "success": true,
+        "timestamp": "20260316_095227"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T09:53:55.940415",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Molecular mechanisms of cellular metabolic homeostasis in stem cells",
+        "paper_score": 0.47,
+        "curiosity_score": 35,
+        "hook_used": "New research explains the surp...",
+        "success": true,
+        "timestamp": "20260316_095233"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-16T10:09:20.325765",
+      "experiment": {
+        "topic_category": "metabolic disease",
+        "paper_title": "Rare biochemical & genetic conditions: clues for broader ... - PMC",
+        "paper_score": 0.42000000000000004,
+        "curiosity_score": 39,
+        "hook_used": "Scientists have made a surpris...",
+        "success": true,
+        "timestamp": "20260316_100916"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolic disease"
+    },
+    {
+      "timestamp": "2026-03-16T10:09:26.461078",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Tumor biomarkers for diagnosis, prognosis and targeted therapy",
+        "paper_score": 0.4625000000000001,
+        "curiosity_score": 35,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260316_100922"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-16T10:28:42.117060",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Biomarkers: Promising and valuable tools towards diagnosis ... - PMC",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "A innovative new theory is cha...",
+        "success": true,
+        "timestamp": "20260316_102441"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-16T10:28:47.522395",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Energy metabolism in health and diseases - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 38,
+        "hook_used": "Scientists have made a groundb...",
+        "success": true,
+        "timestamp": "20260316_102844"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
     }
   ],
   "performance_history": [],

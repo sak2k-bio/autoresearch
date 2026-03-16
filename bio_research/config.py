@@ -22,6 +22,9 @@ class BioConfig:
     
     # Post generation thresholds
     MIN_CURIOSITY_SCORE: int = 35  # Posts must score at least this high
+
+    # Outcome learning threshold (0-1 scale)
+    MIN_OUTCOME_SCORE: float = 0.5
     
     # Generation settings
     NUM_HOOKS_TO_GENERATE: int = 10  # Number of hooks to generate per paper

@@ -67,6 +67,9 @@ This plan outlines the implementation of an autonomous bio-medical research-to-L
 - Maintain autonomous improvement
 - Incorporate TopicMemory feedback
 - Refine all components based on performance metrics
+- NEW: Capture real outcome metrics (engagement, clicks, saves, etc.)
+- NEW: Persist performance_history entries tied to experiment timestamps
+- NEW: Update learnings with concrete adjustments (topic weights, hook patterns)
 
 ## Implementation Steps
 
@@ -91,6 +94,8 @@ This plan outlines the implementation of an autonomous bio-medical research-to-L
 ### Phase 4: Intelligence Modules
 1. Implement TopicMemory for topic performance tracking
 2. Implement LearningLoop for autonomous improvement
+3. Implement OutcomeTracker to record real performance signals
+4. Implement FeedbackIntegrator to update TopicMemory + learnings
 3. Integrate all modules into cohesive pipeline
 
 ### Phase 5: Testing and Validation
@@ -113,6 +118,6 @@ This plan outlines the implementation of an autonomous bio-medical research-to-L
 ## Success Criteria
 - Generate 8.5-9/10 LinkedIn posts that perform well
 - Achieve quality scores consistently above 35/50
-- Demonstrate autonomous improvement over time
+- Demonstrate autonomous improvement over time with outcome-based metrics
 - Successfully integrate with existing autoresearch framework
 - Operate without interfering with existing LLM training functionality

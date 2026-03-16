@@ -393,8 +393,18 @@ def main():
     parser = argparse.ArgumentParser(description='AutoResearch Bio-Medical Pipeline')
     parser.add_argument('--run-once', action='store_true', help='Run a single iteration and exit')
     parser.add_argument('--continuous', action='store_true', help='Run continuously (default)')
-    parser.add_argument('--interval', type=int, default=60, help='Interval in minutes for continuous mode (default: 60)')
+    parser.add_argument('--interval', type=int, default=15, help='Interval in minutes for continuous mode (default: 15)')
     parser.add_argument('--print-learning', action='store_true', help='Print learning summary and exit')
+    parser.add_argument('--ingest-outcomes', type=str, default=None, help='Ingest outcomes from a TSV file and exit')
+    parser.add_argument('--record-outcome', type=str, default=None, help='Record a single outcome row (timestamp in YYYYMMDD_HHMMSS)')
+    parser.add_argument('--impressions', type=int, default=None, help='Impressions for outcome')
+    parser.add_argument('--clicks', type=int, default=0, help='Clicks for outcome')
+    parser.add_argument('--likes', type=int, default=0, help='Likes for outcome')
+    parser.add_argument('--comments', type=int, default=0, help='Comments for outcome')
+    parser.add_argument('--shares', type=int, default=0, help='Shares for outcome')
+    parser.add_argument('--saves', type=int, default=0, help='Saves for outcome')
+    parser.add_argument('--outcome-score', type=float, default=None, help='Override computed outcome score (0-1)')
+    parser.add_argument('--notes', type=str, default=None, help='Optional notes for outcome row')
     
     args = parser.parse_args()
     
@@ -412,6 +422,47 @@ def main():
     
     if args.print_learning:
         autoresearch_bio.learning_loop.print_learning_summary()
+        return
+
+    if args.ingest_outcomes:
+        summary = autoresearch_bio.learning_loop.ingest_outcomes_tsv(
+            args.ingest_outcomes,
+            topic_memory=autoresearch_bio.topic_memory
+        )
+        if summary.get('error'):
+            print(f"[CROSS] Outcome ingest failed: {summary['error']}")
+        else:
+            print(f"[CHECK] Outcome ingest complete: {summary.get('updated', 0)} updated")
+        autoresearch_bio.learning_loop.print_learning_summary()
+        return
+
+    if args.record_outcome:
+        if args.impressions is None:
+            print("[CROSS] --record-outcome requires --impressions")
+            return
+        outcomes_path = os.path.join("outcomes.tsv")
+        outcome = {
+            'impressions': args.impressions,
+            'clicks': args.clicks,
+            'likes': args.likes,
+            'comments': args.comments,
+            'shares': args.shares,
+            'saves': args.saves,
+            'notes': args.notes
+        }
+        # Append to TSV first (auditable log), then update memory
+        autoresearch_bio.learning_loop.append_outcome_tsv(outcomes_path, {
+            'timestamp': args.record_outcome,
+            **outcome,
+            'outcome_score': args.outcome_score
+        })
+        autoresearch_bio.learning_loop.record_outcome(
+            args.record_outcome,
+            outcome,
+            outcome_score=args.outcome_score
+        )
+        autoresearch_bio.learning_loop.print_learning_summary()
+        print(f"[CHECK] Outcome recorded to {outcomes_path}")
         return
     
     if args.run_once:
