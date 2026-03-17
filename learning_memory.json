@@ -1121,6 +1121,198 @@
       "outcome_score": null,
       "success": true,
       "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T06:52:45.751536",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Molecular mechanism of trehalose 6-phosphate inhibition ... - Science",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "Scientists have made a game-ch...",
+        "success": true,
+        "timestamp": "20260317_065241"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T06:52:52.438471",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "New discoveries in therapeutic targets and drug development ... - PMC",
+        "paper_score": 0.46,
+        "curiosity_score": 39,
+        "hook_used": "Researchers have uncovered a i...",
+        "success": true,
+        "timestamp": "20260317_065247"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-17T07:08:39.278906",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Combined transcriptome and metabolome integrated analysis of ...",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260317_070809"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T07:08:45.948713",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic dysregulation in pulmonary fibrosis: insights into amino ...",
+        "paper_score": 0.5,
+        "curiosity_score": 40,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260317_070841"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T07:24:08.791892",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Energy metabolism in health and diseases - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260317_072404"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T07:24:14.179790",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "A 'Nobel' Look at Metabolism - PMC - NIH",
+        "paper_score": 0.47500000000000003,
+        "curiosity_score": 36,
+        "hook_used": "A game-changing new theory is ...",
+        "success": true,
+        "timestamp": "20260317_072410"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T07:39:37.539711",
+      "experiment": {
+        "topic_category": "emerging biomedical discoveries",
+        "paper_title": "The role of KLRG1: a novel biomarker and new therapeutic target",
+        "paper_score": 0.47,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260317_073932"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "emerging biomedical discoveries"
+    },
+    {
+      "timestamp": "2026-03-17T07:39:44.377078",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Microphysiological systems to advance human pathophysiology and ...",
+        "paper_score": 0.43000000000000005,
+        "curiosity_score": 38,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260317_073939"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-17T07:55:32.477217",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "2025: research in review | Nature Biotechnology",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "New research explains the rema...",
+        "success": true,
+        "timestamp": "20260317_075458"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-17T07:55:39.748352",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Nature Index Medical Biotechnology articles",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "New research explains the unex...",
+        "success": true,
+        "timestamp": "20260317_075534"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-17T08:11:00.977204",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Emerging Biomarkers in Metabolomics: Advancements in Precision ...",
+        "paper_score": 0.48250000000000004,
+        "curiosity_score": 39,
+        "hook_used": "Traditional views of this biol...",
+        "success": true,
+        "timestamp": "20260317_081057"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T08:11:07.650059",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Noninvasive Urinary Biomarkers for Obesity-Related Metabolic ...",
+        "paper_score": 0.44500000000000006,
+        "curiosity_score": 36,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260317_081102"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
     }
   ],
   "performance_history": [],

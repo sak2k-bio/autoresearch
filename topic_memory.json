@@ -1,10 +1,10 @@
 {
   "biotechnology": {
-    "total_score": 8.26,
-    "count": 11,
-    "avg_score": 0.7509090909090909,
-    "posts_generated": 11,
-    "last_updated": "2026-03-16T10:09:26.463078"
+    "total_score": 10.439999999999998,
+    "count": 14,
+    "avg_score": 0.7457142857142856,
+    "posts_generated": 14,
+    "last_updated": "2026-03-17T07:55:39.751415"
   },
   "health science insights": {
     "total_score": 5.82,
@@ -14,32 +14,32 @@
     "last_updated": "2026-03-16T08:49:19.481159"
   },
   "emerging biomedical discoveries": {
-    "total_score": 1.36,
-    "count": 2,
-    "avg_score": 0.68,
-    "posts_generated": 2,
-    "last_updated": "2026-03-16T02:15:08.351213"
+    "total_score": 2.14,
+    "count": 3,
+    "avg_score": 0.7133333333333334,
+    "posts_generated": 3,
+    "last_updated": "2026-03-17T07:39:37.541709"
   },
   "metabolism": {
-    "total_score": 14.299999999999997,
-    "count": 19,
-    "avg_score": 0.7526315789473683,
-    "posts_generated": 19,
-    "last_updated": "2026-03-16T10:28:47.526400"
+    "total_score": 17.319999999999997,
+    "count": 23,
+    "avg_score": 0.7530434782608694,
+    "posts_generated": 23,
+    "last_updated": "2026-03-17T08:11:07.655139"
   },
   "general": {
-    "total_score": 11.019999999999998,
-    "count": 15,
-    "avg_score": 0.7346666666666665,
-    "posts_generated": 15,
-    "last_updated": "2026-03-16T10:28:42.120061"
+    "total_score": 13.199999999999996,
+    "count": 18,
+    "avg_score": 0.7333333333333331,
+    "posts_generated": 18,
+    "last_updated": "2026-03-17T08:11:00.980202"
   },
   "human physiology": {
-    "total_score": 7.600000000000001,
-    "count": 10,
+    "total_score": 8.360000000000001,
+    "count": 11,
     "avg_score": 0.7600000000000001,
-    "posts_generated": 10,
-    "last_updated": "2026-03-16T09:04:58.909920"
+    "posts_generated": 11,
+    "last_updated": "2026-03-17T07:39:44.380611"
   },
   "metabolic disease": {
     "total_score": 2.2199999999999998,
