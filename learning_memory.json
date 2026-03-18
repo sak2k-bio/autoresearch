@@ -1313,6 +1313,262 @@
       "outcome_score": null,
       "success": true,
       "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T08:43:34.536124",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Cell\u2013cell communication: new insights and clinical implications",
+        "paper_score": 0.5,
+        "curiosity_score": 35,
+        "hook_used": "Researchers have uncovered a s...",
+        "success": true,
+        "timestamp": "20260317_084325"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-17T08:43:40.426198",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Emerging Biomarkers in Metabolomics: Advancements in Precision ...",
+        "paper_score": 0.4700000000000001,
+        "curiosity_score": 39,
+        "hook_used": "A counterintuitive new theory ...",
+        "success": true,
+        "timestamp": "20260317_084336"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T08:59:02.541812",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Metabolomics\u2010driven approaches for identifying therapeutic targets ...",
+        "paper_score": 0.47,
+        "curiosity_score": 36,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260317_085858"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T08:59:09.416041",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "A genomic approach to therapeutic target validation identifies a ...",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260317_085904"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T09:14:31.114938",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Health sciences articles within Nature Cell Biology",
+        "paper_score": 0.5,
+        "curiosity_score": 36,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260317_091425"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-17T09:14:36.912385",
+      "experiment": {
+        "topic_category": "human physiology",
+        "paper_title": "Balancing AI and human insights in scientific discovery - PMC - NIH",
+        "paper_score": 0.4225,
+        "curiosity_score": 35,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260317_091433"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "human physiology"
+    },
+    {
+      "timestamp": "2026-03-17T09:30:04.504790",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Introduction to The Special Issue: Novel Molecular Pathways ... - PMC",
+        "paper_score": 0.54,
+        "curiosity_score": 39,
+        "hook_used": "Scientists have made a revolut...",
+        "success": true,
+        "timestamp": "20260317_092955"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T09:30:14.536047",
+      "experiment": {
+        "topic_category": "biotechnology",
+        "paper_title": "Biotechnology - Latest research and news - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Scientists have made a fascina...",
+        "success": true,
+        "timestamp": "20260317_093006"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "biotechnology"
+    },
+    {
+      "timestamp": "2026-03-17T09:45:33.301402",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Warfarin alters vitamin K metabolism: a surprising mechanism ... - PMC",
+        "paper_score": 0.4175,
+        "curiosity_score": 37,
+        "hook_used": "Most people think is therefore...",
+        "success": true,
+        "timestamp": "20260317_094529"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T09:45:43.251508",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of the immune system in health and diseases",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "Most people think the traditio...",
+        "success": true,
+        "timestamp": "20260317_094535"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T10:01:03.478741",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic regulation of obesity by naturally occurring compounds",
+        "paper_score": 0.41000000000000003,
+        "curiosity_score": 39,
+        "hook_used": "A new study reveals something ...",
+        "success": true,
+        "timestamp": "20260317_100059"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T10:01:43.629615",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "Emerging Biomarkers in Metabolomics: Advancements in Precision ...",
+        "paper_score": 0.4375,
+        "curiosity_score": 37,
+        "hook_used": "What if everything we knew abo...",
+        "success": true,
+        "timestamp": "20260317_100105"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T10:17:04.060799",
+      "experiment": {
+        "topic_category": "health science insights",
+        "paper_title": "Cell\u2013cell communication: new insights and clinical implications",
+        "paper_score": 0.5,
+        "curiosity_score": 36,
+        "hook_used": "What if everything we knew abo...",
+        "success": true,
+        "timestamp": "20260317_101659"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "health science insights"
+    },
+    {
+      "timestamp": "2026-03-17T10:17:09.980017",
+      "experiment": {
+        "topic_category": "metabolism",
+        "paper_title": "Metabolic diseases - Latest research and news - Nature",
+        "paper_score": 0.5,
+        "curiosity_score": 39,
+        "hook_used": "What if everything we knew abo...",
+        "success": true,
+        "timestamp": "20260317_101706"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "metabolism"
+    },
+    {
+      "timestamp": "2026-03-17T10:32:33.139890",
+      "experiment": {
+        "topic_category": "general",
+        "paper_title": "reports from the Advances in Targeted Therapies meeting, 2024",
+        "paper_score": 0.4325,
+        "curiosity_score": 39,
+        "hook_used": "What if everything we knew abo...",
+        "success": true,
+        "timestamp": "20260317_103228"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": true,
+      "topic_category": "general"
+    },
+    {
+      "timestamp": "2026-03-17T10:32:53.138590",
+      "experiment": {
+        "topic_category": "emerging biomedical discoveries",
+        "paper_title": "Editorial: Bridging discovery and translation in novel biomarkers and ...",
+        "paper_score": 0.4075,
+        "curiosity_score": 34,
+        "hook_used": "A new study reveals something ...",
+        "success": false,
+        "timestamp": "20260317_103235"
+      },
+      "outcome": "unknown",
+      "outcome_score": null,
+      "success": false,
+      "topic_category": "emerging biomedical discoveries"
     }
   ],
   "performance_history": [],
